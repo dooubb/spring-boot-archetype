@@ -1,0 +1,24 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <contextName>DoubaoService</contextName>
+    <!-- Appender to log to console -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                <pattern>
+                    {"sys":"%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%p) %clr(%contextName){yellow}, %clr([%X{traceId:-}]){yellow}, %clr(${symbol_dollar}{PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %msg}%n
+                </pattern>
+            </pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
