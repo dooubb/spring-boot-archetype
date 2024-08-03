@@ -16,7 +16,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles(profiles = {"test"})
 @AutoConfigureMockMvc
-class HelloControllerTes {
+class HelloControllerTest {
 
 
     @Test
