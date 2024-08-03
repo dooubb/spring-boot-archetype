@@ -29,12 +29,12 @@ spring:
       p6spy: false
       datasource:
         primary:
-          url: jdbc:mysql://192.168.121.100:3306/doubao-primary?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+          url: jdbc:mysql://192.168.121.100:3306/doubao-primary-test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
           username: root
           password: root
           driverClassName: com.mysql.cj.jdbc.Driver
         slave:
-          url: jdbc:mysql://192.168.121.100:3306/doubao-slave?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+          url: jdbc:mysql://192.168.121.100:3306/doubao-slave-test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
           username: root
           password: root
           driverClassName: com.mysql.cj.jdbc.Driver
