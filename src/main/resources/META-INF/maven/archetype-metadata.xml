@@ -54,6 +54,8 @@
         <include>Jenkinsfile</include>
         <include>lombok.config</include>
         <include>README.md</include>
+        <include>mvnw.cmd</include>
+        <include>mvnw</include>
       </includes>
     </fileSet>
   </fileSets>
